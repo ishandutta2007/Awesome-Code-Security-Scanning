@@ -58,9 +58,9 @@ This repository tracks notable **SaaS platforms** and **open-source projects** f
 
 ## 🔓 Open-Source GitHub Projects
 
-*Sorted by GitHub Star Count (Descending)*
+*Sorted by GitHub Stars_Count (Descending)*
 
-| Project | GitHub Stars | License | Description |
+| Project | GitHub_Stars | License | Description |
 | :--- | :--- | :--- | :--- |
 | **[TruffleHog](https://github.com/trufflesecurity/trufflehog)** | [<img src="https://img.shields.io/github/stars/trufflesecurity/trufflehog?style=social&color=white" alt="TruffleHog Stars"/>](https://github.com/trufflesecurity/trufflehog/stargazers) | AGPL-3.0 | High-performance secrets scanner searching for 800+ credential types, API keys, and tokens in git repos, filesystems, and S3 buckets with active verification. |
 | **[Semgrep CE](https://github.com/semgrep/semgrep)** | [<img src="https://img.shields.io/github/stars/semgrep/semgrep?style=social&color=white" alt="Semgrep Stars"/>](https://github.com/semgrep/semgrep/stargazers) | LGPL-2.1 | Fast open-source static analysis engine for searching code, enforcing coding standards, and finding security bugs using lightweight, polyglot pattern rules. |
@@ -92,7 +92,7 @@ Contributions are always welcome!
 
 1. 🍴 Fork the repository.
 2. 📝 Add or update tools in `README.md` following the table layout and formatting.
-3. 🔗 Verify all links, pricing details, and star badges.
+3. 🔗 Verify all links, pricing details, and Stars_Badges.
 4. 📬 Submit a Pull Request with a clear description of changes.
 
 ---
