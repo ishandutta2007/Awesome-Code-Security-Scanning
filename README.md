@@ -1,185 +1,128 @@
-# Awesome-Code-Security-Scanning
+# 🛡️ Awesome Code Security Scanning
 
-## Top Code Security Scanning Platforms Ecosystem
+![Awesome Code Security Scanning Banner](assets/banner.svg)
 
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Security-Scanning"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Code-Security-Scanning?style=flat-square" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Security-Scanning/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Code-Security-Scanning?style=flat-square" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Code-Security-Scanning/stargazers"><img src="https://img.shields.io/github/last-commit/ishandutta2007/Awesome-Code-Security-Scanning?style=flat-square" alt="Last Commit"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
+## 🚀 Top Code Security Scanning Platforms Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**
 
-*Focused on SAST, SCA, Secrets Detection & Application Security Posture Management*
+*Focused on SAST, SCA, Secrets Detection, IaC Security & Application Security Posture Management (ASPM)*
 
 **Last updated: September 2026**
 
+---
 
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Code Security Scanning**. These tools help developers and security teams identify vulnerabilities in first-party code, detect vulnerable open-source dependencies, find hardcoded secrets, and manage application security posture across the SDLC.
-
-
-
-**Examples** include Snyk, Semgrep, SonarQube, Checkmarx, Veracode, Mend.io, GitGuardian, OX Security, Apiiro, and ArmorCode (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, custom rule authoring, and transparent security scanning — ideal for teams that need full control over their code security pipeline without per-developer SaaS fees or vendor lock-in.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Snyk](https://snyk.io/)**
-
-  Developer-first security platform covering SAST (Snyk Code), SCA (Snyk Open Source), container, and IaC scanning. Recent updates include support for stripped/CGo Go binaries, Yarn 4, Ruby 4, PHP 8.5, Swift 6.2, and improved Python pip performance for large ML projects like PyTorch . Snyk Code added C# 14/.NET 10, Kotlin Spring WebFlux/Jax-RS, Go Fiber, and Swift grpc-swift support in February 2026 .
-
-
-
-- **[Semgrep](https://semgrep.dev/)**
-
-  Fast, lightweight static analysis platform with unified SAST, SCA, and Secrets scanning. Semgrep Code supports 20+ languages including C/C++, Go, Java, JavaScript, Python, Ruby, Rust, and Terraform . March 2026 introduced AI-powered detection for IDORs and broken authorization, Autofix beta for Code findings, and Cursor/Claude Code plugins . The Semgrep AppSec Platform provides triage workflows and CI/CD integration .
-
-
-
-- **[SonarQube](https://www.sonarsource.com/)**
-
-  Industry-standard code quality and security platform with 5,000+ rules across 30+ languages . Provides IDE extensions (IntelliJ, VS Code, Visual Studio, Eclipse) with real-time analysis, plus server/cloud for pull request analysis and CI/CD quality gates . The Sonar way quality profile is built-in for each language .
-
-
-
-- **[Checkmarx](https://checkmarx.com/)**
-
-  Enterprise SAST with hybrid query-and-AI engine (Checkmarx Fusion) delivering 70% better fidelity and 60% fewer false positives . Recent updates include SAST engine 9.7.7, AI Triage for SCA, native reachability analysis for Python/Java/JavaScript/C#, and MCP Server for risk triage via AI assistants .
-
-
-
-- **[Veracode](https://www.veracode.com/)**
-
-  Enterprise static analysis and SCA platform. Scans compiled binaries with debug information for accurate findings . Supports precompiled ASP.NET, .NET, and Java artifacts. Mobile Behavioral Analysis reviews app permissions for over-permissioning risks .
-
-
-
-- **[Mend.io](https://www.mend.io/)**
-
-  Strong Performer in Forrester Wave SCA Q4 2024, scoring highest in prioritization/reachability, remediation/automation, malicious package detection, language support (200+), AI component analysis, and pricing transparency . Generates SBOMs in SPDX, CycloneDX, and VEX formats .
-
-
-
-- **[GitGuardian](https://www.gitguardian.com/)**
-
-  Secrets detection and remediation platform. Scans Explore results for secrets with type, severity, confidence, source context, and patch details . GitHub PR integration posts check runs and timeline comments, with customizable remediation guidelines and public share links for incident details .
-
-
-
-- **[OX Security](https://www.ox.security/)**
-
-  ASPM platform focused on filtering noise and fixing real risk. Provides evidence-based prioritization (reachability, exploitability, impact), root cause consolidation, no-code remediation, and native pipeline enforcement .
-
-
-
-- **[Apiiro](https://apiiro.com/)**
-
-  Agentic application security platform with AutoFix AI Agent. Partnership with Akamai delivers comprehensive API security, unified governance, and prioritized remediation connecting runtime and code-level insights .
-
-
-
-- **[ArmorCode](https://www.armorcode.com/)**
-
-  AI-powered ASPM platform with 285+ integrations and 25B+ findings analyzed. Features Anya, an agentic AI for conversational security queries, vulnerability insights, real-time recommendations, and automated actions via MCP .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Semgrep CE](https://github.com/semgrep/semgrep)**
-
-  The open-source program analysis engine at the heart of Semgrep. Suitable for ad-hoc scanning, security audits, and pentesting with tolerance for false positives . Supports intraprocedural analysis (single-function scope) for fast, lightweight scanning. Rules are transparent and customizable. Install via `brew install semgrep` or `pip install semgrep`. **LGPL 2.1** (with some Pro rules under commercial license).
-
-
-
-- **[argus](https://github.com/argus-ffi/argus)**
-
-  High-performance, multi-threaded secrets scanner written in Rust. Detects secrets, keys, and sensitive information with deep analysis heuristics: Story Mode (natural language risk explanations), Sink Provenance (data flow to network/disk/log sinks), Leak Velocity, Credential Shadowing, Lateral Linkage, and Surface Tension . Supports WASM for in-memory scanning. Risk Heatmap and Flow Context Graph visualization. **Open source**.
-
-
-
-- **[OSV-SCALIBR](https://github.com/google/osv-scalibr)**
-
-  Google's open-source software inventory extraction and security finding detection library. Scans containers, filesystems, and source repositories for packages and vulnerabilities using plugins . Supports ScanConfig with capabilities, scan roots, max file size, gitignore handling, and symlink reading. **Apache-2.0**.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **SAST Engines**: **Semgrep CE** (transparent rules, fast), **CodeQL** (GitHub, semantic code analysis).
-
-- **Secrets Scanning**: **argus** (Rust, deep heuristics, WASM support), **Gitleaks** (repo-focused), **TruffleHog** (800+ secret types).
-
-- **SCA/SBOM**: **OSV-SCALIBR** (Google, plugin-based), **Syft** (SBOM generation), **Grype** (vulnerability scanning).
-
-- **IaC Scanning**: **Checkov** (Bridgecrew, multi-cloud), **KICS** (Checkmarx, open-source).
-
-
-
-**Frameworks for building custom systems**: Combine **Semgrep CE** for SAST with custom rules, **argus** for secrets detection with deep heuristics, **OSV-SCALIBR** for SCA and SBOM generation, and **Checkov** for IaC scanning. Add **GitHub Actions** or **GitLab CI** for pipeline integration and **SARIF** output for IDE/PR annotations.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Code security scanning tools handle sensitive vulnerability and credential data; ensure proper access controls and secure storage of findings.
-
-- **Open-source reality**: The open-source ecosystem for code security is **mature and production-ready**. **Semgrep CE** provides a transparent SAST engine with customizable rules . **argus** offers deep secrets detection with novel heuristics like Sink Provenance and Leak Velocity . **OSV-SCALIBR** provides Google-backed SCA and SBOM generation . For enterprise-grade ASPM with unified triage across SAST/SCA/secrets/IaC, commercial platforms (Snyk, Semgrep Platform, ArmorCode, OX Security) offer broader integration and AI-powered remediation that open-source tools require significant assembly to match.
-
-
+This repository tracks notable **SaaS platforms** and **open-source projects** for **Code Security Scanning**. These tools help developers, AppSec specialists, and DevSecOps teams identify vulnerabilities in first-party code (SAST), detect vulnerable open-source dependencies (SCA), find hardcoded secrets, scan Infrastructure as Code (IaC), and manage application security posture (ASPM) across the SDLC.
 
 ---
 
+## 📑 Table of Contents
 
+- [🏢 SaaS/Hosted Platforms](#-saashosted-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support](#-support)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
 
-**Made for security engineers, AppSec teams, DevSecOps practitioners, and developers building secure software.**
+---
 
-Let's make code security scanning more open, transparent, and developer-friendly.
+## 🏢 SaaS/Hosted Platforms
+
+> 📊 **Market Overview**: The global Application Security (AppSec) & Code Security Scanning market is estimated at **$6.2 Billion - $7.8 Billion (2025/2026)** with a CAGR of 18.5%. The market is **moderately fragmented**, featuring established enterprise legacy leaders (Checkmarx, Veracode) alongside fast-growing developer-first innovators (Snyk, Semgrep) and emerging ASPM consolidators (Apiiro, OX Security, ArmorCode).
+
+*Sorted by Company Size / Revenue / Valuation (Descending)*
+
+| Platform | Estimated Valuation / Revenue | Starting Paid Tier Pricing | Free Tier / Trial Limits | Core Focus & Features |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Checkmarx](https://checkmarx.com/)** | **~$1.4B** Valuation (acquired by Hellman & Friedman for $1.15B) | ~$12,000 / year (Enterprise AppSec contract) | 14-Day Free Trial (Full feature access upon request) | Enterprise SAST with Checkmarx Fusion hybrid query & AI engine, SCA, reachability analysis, and AI Triage. |
+| **[Veracode](https://www.veracode.com/)** | **~$1.2B - $1.4B** Valuation (acquired by TA Associates) | ~$10,000 / year (Enterprise SaaS license) | 14-Day Free Trial (Binary & static scan evaluation) | Binary static analysis, SCA, and Mobile Behavioral Analysis reviewing app permission risks. |
+| **[Snyk](https://snyk.io/)** | **~$7.4B** Valuation ($250M+ ARR) | $25 / developer / month (Team plan) | **Free Forever**: 300 Code tests/mo, 200 License tests/mo | Developer-first SAST (Snyk Code), SCA, container, and IaC scanning with real-time IDE extensions. |
+| **[SonarQube](https://www.sonarsource.com/)** | **~$4.7B** Valuation ($150M+ ARR) | $15 / month (SonarQube Cloud Developer Plan) | **Free Community Edition** (Self-hosted, unlimited LOC for open source & core languages) | Code quality & security platform with 5,000+ SAST rules across 30+ languages and CI/CD quality gates. |
+| **[Mend.io](https://www.mend.io/)** | **~$600M** Valuation ($80M+ ARR) | ~$5,000 / year (Enterprise base subscription) | 30-Day Free Trial (Full SCA & SAST capabilities) | Enterprise SCA prioritization, reachability analysis, malicious package detection, and SBOM generation (SPDX/CycloneDX/VEX). |
+| **[GitGuardian](https://www.gitguardian.com/)** | **~$300M** Valuation ($25M+ ARR) | $13.50 / developer / month (Pro plan) | **Free Forever**: Up to 25 developers (Unlimited public/private repo secrets scanning) | Automated secrets detection, historical git commit scanning, and automated incident remediation workflows. |
+| **[Semgrep](https://semgrep.dev/)** | **~$250M** Valuation (Series C funded) | $28 / contributor / month (Semgrep Pro) | **Free Forever**: Up to 10 contributors (Full SAST & SCA features) | Ultra-fast SAST, SCA, and Secrets detection engine with custom rule syntax, AI IDOR detection, and IDE plugins. |
+| **[Apiiro](https://apiiro.com/)** | **~$200M** Valuation (Series B funded) | ~$25,000 / year (Enterprise ASPM subscription) | 14-Day Free Trial (Enterprise proof-of-concept evaluation) | Agentic ASPM platform with AutoFix AI Agent connecting runtime insights with code-level risk triage. |
+| **[ArmorCode](https://www.armorcode.com/)** | **~$150M** Valuation (Series B funded) | ~$20,000 / year (Enterprise ASPM platform license) | 14-Day Free Trial (Interactive demo & POC access) | AI-powered ASPM consolidating 285+ AppSec tools with Anya agentic AI for automated risk remediation. |
+| **[OX Security](https://www.ox.security/)** | **~$100M** Valuation (Series A funded) | ~$15,000 / year (Enterprise ASPM license) | 14-Day Free Trial (Pipeline risk evaluation) | Pipeline security & ASPM focusing on root-cause consolidation, evidence-based prioritization, and no-code remediation. |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+*Sorted by GitHub Star Count (Descending)*
+
+| Project | GitHub Stars | License | Description |
+| :--- | :--- | :--- | :--- |
+| **[TruffleHog](https://github.com/trufflesecurity/trufflehog)** | [<img src="https://img.shields.io/github/stars/trufflesecurity/trufflehog?style=social&color=white" alt="TruffleHog Stars"/>](https://github.com/trufflesecurity/trufflehog/stargazers) | AGPL-3.0 | High-performance secrets scanner searching for 800+ credential types, API keys, and tokens in git repos, filesystems, and S3 buckets with active verification. |
+| **[Semgrep CE](https://github.com/semgrep/semgrep)** | [<img src="https://img.shields.io/github/stars/semgrep/semgrep?style=social&color=white" alt="Semgrep Stars"/>](https://github.com/semgrep/semgrep/stargazers) | LGPL-2.1 | Fast open-source static analysis engine for searching code, enforcing coding standards, and finding security bugs using lightweight, polyglot pattern rules. |
+| **[Gitleaks](https://github.com/gitleaks/gitleaks)** | [<img src="https://img.shields.io/github/stars/gitleaks/gitleaks?style=social&color=white" alt="Gitleaks Stars"/>](https://github.com/gitleaks/gitleaks/stargazers) | MIT | SAST tool for detecting and preventing hardcoded secrets like passwords, api keys, and tokens in git repositories and CI/CD pipelines. |
+| **[Checkov](https://github.com/bridgecrewio/checkov)** | [<img src="https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white" alt="Checkov Stars"/>](https://github.com/bridgecrewio/checkov/stargazers) | Apache-2.0 | Static code analysis tool for Infrastructure as Code (IaC) scanning Terraform, CloudFormation, Kubernetes, Dockerfile, Serverless, and ARM templates. |
+| **[Trivy](https://github.com/aquasecurity/trivy)** | [<img src="https://img.shields.io/github/stars/aquasecurity/trivy?style=social&color=white" alt="Trivy Stars"/>](https://github.com/aquasecurity/trivy/stargazers) | Apache-2.0 | Comprehensive security scanner for container images, filesystems, git repos, SBOMs, vulnerabilities (SCA), misconfigurations (IaC), and secrets. |
+| **[Syft](https://github.com/anchore/syft)** | [<img src="https://img.shields.io/github/stars/anchore/syft?style=social&color=white" alt="Syft Stars"/>](https://github.com/anchore/syft/stargazers) | Apache-2.0 | CLI tool and Go library for generating Software Bill of Materials (SBOM) from container images and filesystems in SPDX, CycloneDX, and Syft formats. |
+| **[Grype](https://github.com/anchore/grype)** | [<img src="https://img.shields.io/github/stars/anchore/grype?style=social&color=white" alt="Grype Stars"/>](https://github.com/anchore/grype/stargazers) | Apache-2.0 | Vulnerability scanner for container images and filesystems. Works seamlessly with Syft SBOM formats to identify CVEs across OS and language packages. |
+| **[KICS](https://github.com/Checkmarx/kics)** | [<img src="https://img.shields.io/github/stars/Checkmarx/kics?style=social&color=white" alt="KICS Stars"/>](https://github.com/Checkmarx/kics/stargazers) | Apache-2.0 | Keeping Infrastructure as Code Secure (KICS) detects security vulnerabilities, compliance issues, and infrastructure misconfigurations in Terraform, K8s, Docker. |
+| **[OSV-SCALIBR](https://github.com/google/osv-scalibr)** | [<img src="https://img.shields.io/github/stars/google/osv-scalibr?style=social&color=white" alt="OSV-SCALIBR Stars"/>](https://github.com/google/osv-scalibr/stargazers) | Apache-2.0 | Google's open-source software inventory extraction and security finding detection library for container, filesystem, and repo SCA scanning. |
+| **[argus](https://github.com/argus-ffi/argus)** | [<img src="https://img.shields.io/github/stars/argus-ffi/argus?style=social&color=white" alt="argus Stars"/>](https://github.com/argus-ffi/argus/stargazers) | MIT | High-performance Rust secrets scanner with advanced heuristics including Sink Provenance, Leak Velocity, Credential Shadowing, and WASM support. |
+
+---
+
+## 🛠️ Recommended DevSecOps Security Stack Architectures
+
+To build a zero-cost, enterprise-grade open-source security scanning pipeline in CI/CD:
+
+1. 🔍 **SAST (Static Application Security Testing)**: Use **Semgrep CE** for custom policy enforcement and fast semantic code scanning.
+2. 🔑 **Secrets Detection**: Combine **TruffleHog** and **Gitleaks** with pre-commit hooks to block exposed API keys and tokens.
+3. 📦 **SCA & SBOM**: Use **Syft** for SBOM generation and **Grype** or **OSV-SCALIBR** for open-source vulnerability scanning.
+4. 🏗️ **IaC Security**: Deploy **Checkov** or **KICS** in GitHub Actions / GitLab CI to catch cloud misconfigurations before deployment.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are always welcome! 
+
+1. 🍴 Fork the repository.
+2. 📝 Add or update tools in `README.md` following the table layout and formatting.
+3. 🔗 Verify all links, pricing details, and star badges.
+4. 📬 Submit a Pull Request with a clear description of changes.
+
+---
+
+## ☕ Support
+
+If you find this curated list helpful for your AppSec workflows, security auditing, or DevSecOps pipeline setup, please consider supporting the project:
+
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork & Share** it with your team and DevSecOps community.
+- ☕ **Buy me a coffee**: Support ongoing open-source maintenance via the [Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Thank you for supporting open-source security tooling! ❤️
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Code-Security-Scanning&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Code-Security-Scanning&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This is a **community-curated** list for informational and research purposes.
+- Tools listed handle sensitive codebase security details; ensure proper access permissions and encryption for scan results.
+- For curated collections of awesome projects, check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome).
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for Security Engineers, AppSec Specialists, and DevSecOps Practitioners worldwide.</b>
+</p>
